@@ -1,34 +1,31 @@
+import 'package:bytebank/widgets/corpo_tela_principal.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MeuApp());
+void main() => runApp(const ByteBank());
 
-class MeuApp extends StatelessWidget {
-  const MeuApp({Key? key}) : super(key: key);
+class ByteBank extends StatelessWidget {
+  const ByteBank({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TelaPincipal(),
+      home: TelaPrincipal(),
     );
   }
 }
 
-class TelaPincipal extends StatelessWidget {
-  const TelaPincipal({Key? key}) : super(key: key);
+class TelaPrincipal extends StatelessWidget {
+  const TelaPrincipal({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Transferencias"),
-        centerTitle: true,
-      ),
-      body: Container(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
-      ),
-    );
+        appBar: AppBar(
+          backgroundColor: const Color.fromARGB(255, 97, 158, 28),
+          title: const Text("Criando transferencia"),
+          centerTitle: true,
+        ),
+        body: const CorpoTelaPrincipal());
   }
 }
