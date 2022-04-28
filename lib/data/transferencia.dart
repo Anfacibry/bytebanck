@@ -1,5 +1,5 @@
 class Transferencia {
+  final int numeroConta;
   final double valor;
-  final double numeroConta;
-  Transferencia({required this.valor, required this.numeroConta});
+  Transferencia({required this.numeroConta, required this.valor});
 }
