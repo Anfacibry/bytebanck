@@ -38,20 +38,17 @@ class TelaDeCadastro extends StatelessWidget {
                 final transferenciaRecebida = ItemTransferencia(
                     transferencia: Transferencia(
                         numeroConta: numeroConta, valor: valorConta));
-                debugPrint("$transferenciaRecebida");
-                debugPrint("Criando Transferência");
 
                 Navigator.pop(
                   context,
                   transferenciaRecebida,
                 );
-                debugPrint("$transferenciaRecebida");
               }
             },
             child: const Text("Confirmar"),
-            style: ElevatedButton.styleFrom(
+            /*style: ElevatedButton.styleFrom(
               primary: const Color.fromARGB(255, 99, 161, 27),
-            ),
+            ),*/
           ),
         ],
       ),
